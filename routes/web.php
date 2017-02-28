@@ -13,6 +13,9 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/bands', 'HomeController@index');
+Route::get('/band/create', 'HomeController@index');
+Route::post('/band', 'BandController@post');
 Route::get('/bands/all', 'BandController@all');
 Route::get('/albums', 'HomeController@index');
 Route::get('/albums/all', 'AlbumController@allWithBands');
+Route::get('/csrf', 'HomeController@csrf');
